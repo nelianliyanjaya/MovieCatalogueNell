@@ -41,14 +41,14 @@
                 android:layout_marginLeft="16dp"
                 android:text="Upcoming Movies"
                 android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textColor="@color/purple_700"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_movies_list"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
-                tools:listitem="@layout/movie_item"/>
+                tools:listitem="@layout/movie_item" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
