@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MovieFragment">
+    tools:context=".MovieFragment"
+    android:background="@color/purple_200">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

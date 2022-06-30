@@ -3,15 +3,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TvShowFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TvShowFragment"
+    android:background="@color/purple_200">
 
-    <TextView
-        android:gravity="center"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="22dp"
-        android:textColor="@color/black"
-        android:textStyle="italic"
-        android:text="TV Show Fragment Nell" />
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="The Movie DB Nell"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Popular TV Shows"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_tv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                tools:listitem="@layout/tv_item" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </FrameLayout>
