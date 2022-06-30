@@ -13,7 +13,7 @@
         android:name="com.nell.moviecataloguenell.TvShowFragment"
         tools:layout="@layout/fragment_tv_show" />
     <fragment
-        android:id="@+id/favoriteFragment"
-        android:name="com.nell.moviecataloguenell.FavoriteFragment"
-        tools:layout="@layout/fragment_favorite" />
+        android:id="@+id/profileFragment"
+        android:name="com.nell.moviecataloguenell.ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
