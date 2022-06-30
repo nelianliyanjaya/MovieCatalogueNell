@@ -5,9 +5,9 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-data class MovieResponse(
+data class TvResponse(
     @SerializedName("results")
-    val movies : List<Movie>
+    val tv : List<Tv>
 
 ) : Parcelable {
     constructor() : this(mutableListOf())

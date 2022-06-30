@@ -3,7 +3,7 @@ package com.nell.moviecataloguenell
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class MovieApiService {
+class TvApiService {
 
     companion object{
         private const val BASE_URL = "https://api.themoviedb.org"
